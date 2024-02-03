@@ -1,3 +1,9 @@
-## neovim
+execute
+```bash
+bash install.sh
+```
 
-config
+and then this
+```
+nvim --clean ~/.config/nvim/lua/plugins.lua +so +PackerSync
+```

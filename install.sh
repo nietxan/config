@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm ~/.config/nvim
+rm -f ~/.config/nvim
 mv ../config ~/.config/nvim
 
 // Packer
@@ -9,4 +9,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 cd ~/.config/nvim
 
-nvim --headless +so +PackerInstall +PackerSync +qall
+nvim ~/.config/nvim/lua/plugins.lua +so +PackerSync +qall
+
+nvim

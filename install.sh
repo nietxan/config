@@ -7,4 +7,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 wait $BACK_PID
 
-nvim ~/.config/nvim/lua/plugins.lua +so +PackerSync +qall
+nvim -E +so +PackerSync +qall

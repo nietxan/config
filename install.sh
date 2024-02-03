@@ -7,4 +7,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 wait $BACK_PID
 
-nvim -E +so +PackerSync +qall
+nvim --headless +so +PackerSync

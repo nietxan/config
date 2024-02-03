@@ -3,9 +3,11 @@ execute
 bash install.sh
 ```
 
-and then this
+change dir
 ```
 cd ~/.config/nvim
-
-nvim --clean ~/.config/nvim/lua/plugins.lua +so +PackerSync
+```
+open plugins.lua and in neovim execute so and PackerSync
+```
+nvim ~/.config/nvim/lua/plugins.lua
 ```

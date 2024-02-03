@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	
 	use 'mzarnitsa/psql'
+
+	use {'github/copilot.vim', branch = 'release'}
 		
 	use {
 		'windwp/nvim-autopairs',

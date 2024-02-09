@@ -7,7 +7,11 @@ change dir
 ```
 cd ~/.config/nvim
 ```
-open plugins.lua and in neovim execute so and PackerSync
+open plugins.lua and in neovim execute 
 ```
 nvim ~/.config/nvim/lua/plugins.lua
+```
+and finally
+```
+:so && :PackerSync
 ```

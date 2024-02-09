@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir ~/.config/nvim
+mkdir -p ~/.config/nvim
 
 mv * .[^.]* ~/.config/nvim
 

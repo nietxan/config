@@ -1,5 +1,11 @@
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+if not pcall(require, "packer") then
+    vim.cmd([[!bash install.sh]])
+end
+
+require('packer').startup(function()
+	vim.o.background = "dark" -- or "light" for light mode
+	vim.cmd([[colorscheme gruvbox]])
+end)
 		
 vim.opt.number = true
 vim.opt.relativenumber = true

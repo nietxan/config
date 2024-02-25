@@ -14,13 +14,21 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	
 	use 'mzarnitsa/psql'
-
-	use 'github/copilot.vim'
 		
 	use {
 		'windwp/nvim-autopairs',
 		config = function() require('nvim-autopairs').setup {} end
 	}
+
+	use {
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{"nvim-lua/plenary.nvim"},
+			{"nvim-treesitter/nvim-treesitter"}
+		}
+	}
+
+	use 'rafamadriz/friendly-snippets'
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',

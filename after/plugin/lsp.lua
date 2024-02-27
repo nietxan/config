@@ -1,9 +1,13 @@
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-	-- see :help lsp-zero-keybindings
-	-- to learn the available actions
-	lsp_zero.default_keymaps({buffer = bufnr})
+	local opts = {buffer = bufnr, remap = false}
+
+	vim.keymap.set("n", "<leader>aa", function() vim.lsp.buf.code_action() end, opts)
+	vim.keymap.set("n", "<leader>rr", function() vim.lsp.buf.rename() end, opts)
+	vim.keymap.set("n", "<leader>rs", function() vim.lsp.buf.references() end, opts)
+
+	lsp_zero.default_keymaps(opts)
 end)
 
 local cmp = require('cmp')

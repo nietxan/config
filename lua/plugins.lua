@@ -21,14 +21,9 @@ return require('packer').startup(function(use)
 	}
 
 	use {
-		"ThePrimeagen/refactoring.nvim",
-		requires = {
-			{"nvim-lua/plenary.nvim"},
-			{"nvim-treesitter/nvim-treesitter"}
-		}
+		'nvim-telescope/telescope.nvim', tag = '0.1.5',
+		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-
-	use 'rafamadriz/friendly-snippets'
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',

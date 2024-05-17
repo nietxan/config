@@ -1,6 +1,4 @@
-vim.cmd([[colorscheme kanagawa-dragon]])
-
-vim.cmd([[hi! LineNr guibg=none ctermbg=none]])
+vim.cmd([[colorscheme tender]])
 
 vim.opt.number = true
 vim.opt.relativenumber = true

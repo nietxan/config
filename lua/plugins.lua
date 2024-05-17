@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 
 	use 'nvim-treesitter/nvim-treesitter'
 
-	use 'rebelot/kanagawa.nvim'
+	use 'jacoborus/tender.vim'
 
 	use 'tpope/vim-fugitive'
 	

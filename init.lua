@@ -1,5 +1,3 @@
-vim.cmd([[colorscheme tender]])
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 

@@ -9,11 +9,11 @@ return require('packer').startup(function(use)
 
 	use 'nvim-treesitter/nvim-treesitter'
 
-	use 'catppuccin/nvim'
-
 	use 'tpope/vim-fugitive'
 	
 	use 'mzarnitsa/psql'
+
+	use 'ellisonleao/gruvbox.nvim'
 		
 	use {
 		'windwp/nvim-autopairs',
